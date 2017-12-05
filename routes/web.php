@@ -14,16 +14,8 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/contato/{id?}', function ($id = null){
-	return 'contato' . $id;
-});
+Route::get('/contato/{id?}', ['uses'=>'contatoController@index']);
 
-Route::post('/contato', function (){
-	dd($_POST);
-	return 'contato teste formulario via POST';
-});
+Route::post('/contato', ['uses'=>'contatoController@criar']);
 
-Route::put('/contato', function (){
-	dd($_POST);
-	return 'contato teste formulario via PUT';
-});
+Route::put('/contato', ['uses'=>'contatoController@editar']);
