@@ -7,8 +7,12 @@ use Illuminate\Http\Request;
 class ContatoController extends Controller
 {
     public function index()
-    {
-    	return 'Esse é o index do contatoController';
+    {	
+        $contatos = [
+            (object)['nome'=>'Flavio', 'tel'=>'965459012'],
+            (object)['nome'=>'Luciana', 'tel'=>'980337926']
+        ];
+    	return view('contato.index', compact('contatos'));
     }
 
     public function criar(Request $form)
