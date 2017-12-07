@@ -27,6 +27,7 @@ Route::get('/admin/editar/{id}',['as'=>'admin.cursos.editar','uses'=>'admin\Curs
 Route::put('/admin/atualizar/{id}',['as'=>'admin.cursos.atualizar','uses'=>'admin\CursoController@atualizar']);
 Route::get('/admin/deletar/{id}',['as'=>'admin.cursos.deletar','uses'=>'admin\CursoController@deletar']);
 
+
 /*
 
 adicionar
