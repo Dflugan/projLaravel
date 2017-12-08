@@ -25,7 +25,7 @@
                 <td>{{$registro->id}}</td>
                 <td>{{$registro->titulo}}</td>
                 <td>{{$registro->descricao}}</td>
-                <td><img src="{{asset($registro->imagem)}}" alt="{{$registro->titulo}}"> </td>
+                <td><img width="150" src="{{asset($registro->imagem)}}" alt="{{$registro->titulo}}"> </td>
                 <td>{{$registro->valor}}</td>
                 <td>{{$registro->publicado}}</td>
                 <td>
@@ -38,7 +38,7 @@
           </table>
         </div>
         <div class="row">
-          <a class="btn blue" href="#">Adicionar</a>
+          <a class="btn blue" href="{{route('admin.cursos.adicionar')}}">Adicionar</a>
         </div>
   </div>
 

@@ -22,12 +22,12 @@
 </div>
 @if(isset($registro->imagem))
 <div class="input-field">
-  <img src="{{isset($registro->imagem)}}">
+  <img width="150" src="{{isset($registro->imagem)}}">
 </div>
 @endif
 <div class="">
   <p>
-     <input type="checkbox" id="test5" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true"/>
+     <input type="checkbox" id="test5" name="publicado" {{isset($registro->publicado) && $registro->publicado == 'sim' ? 'checked' : ''}} value="true"/>
      <label for="test5">Publicar?</label>
    </p>
    <br><br>
