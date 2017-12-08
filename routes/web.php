@@ -22,7 +22,7 @@ Route::put('/contato', ['uses'=>'contatoController@editar']);
 
 Route::get('/admin/cursos',['as'=>'admin.cursos','uses'=>'admin\CursoController@index']);
 Route::get('/admin/adicionar',['as'=>'admin.cursos.adicionar','uses'=>'admin\CursoController@adicionar']);
-Route::post('/admin/salvar',['as'=>'admin.cursos.salavar','uses'=>'admin\CursoController@salvar']);
+Route::post('/admin/salvar',['as'=>'admin.cursos.salvar','uses'=>'admin\CursoController@salvar']);
 Route::get('/admin/editar/{id}',['as'=>'admin.cursos.editar','uses'=>'admin\CursoController@editar']);
 Route::put('/admin/atualizar/{id}',['as'=>'admin.cursos.atualizar','uses'=>'admin\CursoController@atualizar']);
 Route::get('/admin/deletar/{id}',['as'=>'admin.cursos.deletar','uses'=>'admin\CursoController@deletar']);
