@@ -14,11 +14,14 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/',['as'=>'site.home','uses'=>'site\HomeController@index']);
+
 Route::get('/contato/{id?}', ['uses'=>'contatoController@index']);
 
 Route::post('/contato', ['uses'=>'contatoController@criar']);
 
 Route::put('/contato', ['uses'=>'contatoController@editar']);
+
 
 Route::get('/admin/cursos',['as'=>'admin.cursos','uses'=>'admin\CursoController@index']);
 Route::get('/admin/adicionar',['as'=>'admin.cursos.adicionar','uses'=>'admin\CursoController@adicionar']);

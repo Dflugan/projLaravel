@@ -5,7 +5,7 @@
 
   @section('conteudo')
   <div class="container">
-        <h3 class="center">Essa é a views index</h3>
+        <h3 class="center">Lista de Curso</h3>
         <div class="row">
           <table>
             <thead>
